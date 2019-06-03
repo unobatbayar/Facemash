@@ -1,2 +1,2 @@
 # facemash
-Recreating Facemash using a simple PHP and remote MySQL with Uikit for html/css design. For educational purposes only.
+Recreating Facemash using PHP and MySQL with UIkit for html/css. For educational purposes only.
