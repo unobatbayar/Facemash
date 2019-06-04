@@ -36,13 +36,13 @@ function eloRating($player_A, $player_B, $won){
 
 	//if won
 	if($won == 'yes'){
-		$difference = $ratingA + ($K * (2 - $expA));
+		$difference = $player_A + ($K * (2 - $expA));
 	}
 	else{
-		$difference = $ratingA - ($K * (2 - $expA));
+		$difference = $player_A - ($K * (2 - $expA));
 	}
 	//return new rating
-	return $player_A + $difference;
+	return $difference;
 }
 
 ?>
