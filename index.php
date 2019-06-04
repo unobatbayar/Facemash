@@ -15,34 +15,38 @@ if (isset($_POST['CHOSEN'])) {
 	$girl_one_score = $mysqli->escape_string($_POST['girl_one_score']);
 	$girl_two_score = $mysqli->escape_string($_POST['girl_two_score']);
 	$winner = $mysqli->escape_string($_POST['winner']);
+
+	
 	if($winner == 'girl_one'){
-		$girl_one_new_score = eloRating($girl_one_score, $girl_two_score, 'yes');
-		$girl_two_new_score = eloRating($girl_two_score, $girl_one_score, 'no');
+		$girl_scores = eloRating($girl_one_score, $girl_two_score, 'yes');
 	}else{
-		$girl_one_new_score = eloRating($girl_one_score, $girl_two_score, 'no');
-		$girl_two_new_score = eloRating($girl_two_score, $girl_one_score, 'yes');
+		$girl_scores = eloRating($girl_one_score, $girl_two_score, 'no');
 	}
 
 	// Update database
-	$mysqli->query("UPDATE girls SET score='$girl_one_new_score' WHERE name='$girl_one'");  
-	$mysqli->query("UPDATE girls SET score='$girl_two_new_score' WHERE name='$girl_two'");  
+	$mysqli->query("UPDATE girls SET score='$girl_one_new_score' WHERE name='$girl_scores[0]'");  
+	$mysqli->query("UPDATE girls SET score='$girl_two_new_score' WHERE name='$girl_scores[1]'");  
 }
 
 function eloRating($player_A, $player_B, $won){
 	$K = 25;
-
+	
 	$expA = 1/(1 + (pow(10,($player_B - $player_A)/400)));
 	$expB = 1/(1 + (pow(10,($player_A - $player_B)/400)));
 
-	//if won
+	$new_ratings = array(0, 0);
+
+	//Player A wins/Girl 1, Player B loses
 	if($won == 'yes'){
-		$difference = $player_A + ($K * (2 - $expA));
+		$new_ratings[0] = $player_A + ($K * (2 - $expA)); // Girl 1
+		$new_ratings[1] = $player_B - ($K * (2 - $expB)); // Girl 2
 	}
 	else{
-		$difference = $player_A - ($K * (2 - $expA));
+		$new_ratings[0] = $player_A - ($K * (2 - $expA));
+		$new_ratings[1] = $player_B + ($K * (2 - $expB));
 	}
 	//return new rating
-	return $difference;
+	return $new_ratings;
 }
 
 ?>
