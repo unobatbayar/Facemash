@@ -1,9 +1,9 @@
-# facemash
+# Facemash
 Recreating Facemash! 
 
 
 ## How to Use
-You must use download your targeted images and number them. E.g if I have 500 images of girls in .jpg / .png  or any format; I must name them 1 all the way to 500 (Any image format of course). You can create simple script to automatically name them or when mass downloading images set them to.
+You need to download your targeted images and number them. E.g if I have 500 images of girls in .jpg / .png  or any format; I must name them 1 all the way to 500 (Any image format of course). You can create simple script to automatically name them or when mass downloading images set them to.
 
 ## Demo
 
