@@ -71,7 +71,7 @@ function eloRating($player_A, $player_B, $won){
 		<h2 class="uk-heading-medium">Who's hotter? Click to Choose.</h2>
 		<?php
 
-		//Generate our opponents
+		//Generate our opponents. Limit to 5 since we only have 5 images as example.
 		$distinct = True;
 		while($distinct){
 			$girl_one = rand(1, 5);
@@ -124,7 +124,7 @@ function eloRating($player_A, $player_B, $won){
 	<!-- Leaderboards -->
     <li>
 	<table class="uk-table uk-table-divider uk-table-small uk-table-striped">
-    <h2 class="uk-text-center"> <span class="uk-label uk-label-success ">Top 5</span> </h2>
+    <h2 class="uk-text-center"> <span class="uk-label uk-label-success ">Top 10</span> </h2>
     <thead>
         <tr>
 			<th>Rank</th>
@@ -137,7 +137,7 @@ function eloRating($player_A, $player_B, $won){
 
 	<?php
         $i = 1;
-        $data = $mysqli->query("SELECT * FROM girls ORDER BY score DESC LIMIT 5");
+        $data = $mysqli->query("SELECT * FROM girls ORDER BY score DESC LIMIT 10");
         while($row = $data->fetch_assoc()) {
 			echo '<tr><td>'.$i.'</td>';
 			echo '<td class="uk-text-capitalize"><img class="uk-border-square" width="100" height="100" src="images/'.$row['name'].'.jpg"></td>';
