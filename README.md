@@ -7,7 +7,7 @@ You must use download your targeted images and number them. E.g if I have 500 gi
 
 ## Demo
 
-Main page!
+Main page! Each image has their current rank rating and will be updated depending on whether they have lost or not.
 
 ![alt text](https://github.com/unobatbayar/facemash/blob/master/images/start.png) 
 
