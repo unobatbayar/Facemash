@@ -24,8 +24,9 @@ if (isset($_POST['CHOSEN'])) {
 	}
 
 	// Update database
-	$mysqli->query("UPDATE girls SET score='$girl_one_new_score' WHERE name='$girl_scores[0]'");  
-	$mysqli->query("UPDATE girls SET score='$girl_two_new_score' WHERE name='$girl_scores[1]'");  
+	$mysqli->query("UPDATE girls SET score='$girl_scores[0]' WHERE name='$girl_one'");  
+	$mysqli->query("UPDATE girls SET score='$girl_scores[1]' WHERE name='$girl_two'");  
+
 }
 
 function eloRating($player_A, $player_B, $won){
