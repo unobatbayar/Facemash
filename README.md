@@ -1,5 +1,6 @@
 # Facemash
-Recreating Facemash! 
+### Recreating Facemash! 
+
 ![alt text](https://github.com/unobatbayar/facemash/blob/master/images/facemash.jpg)
 
 ## How to Use
