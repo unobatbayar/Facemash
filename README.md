@@ -7,7 +7,7 @@
     <a href="https://github.com/unobatbayar/facemash/pull/new/master">Contribute</a>
   </h3>
 
-  <sub> Built by <a href="https://www.twitter.com/unobatbayar">unobatbayar</a> on morning 1 hour coding spree.  </sub>
+  <sub> Built by <a href="https://www.twitter.com/unobatbayar">unobatbayar</a> in 1 hour coding spree.  </sub>
 </div>
 
 ## Preparation
