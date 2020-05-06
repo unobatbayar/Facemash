@@ -26,3 +26,7 @@ Our version has an additional tab of leaderboards (Also customizable in code). C
 ## Contribute
 
 Feel free to fork and add any additional features or code improvements! 
+
+<sub>Give feedback, ideas and more: <br> <sub> 
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=Follow%20%40unobatbayar)](https://twitter.com/unobatbayar)
+
