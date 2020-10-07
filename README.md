@@ -1,7 +1,7 @@
 <div align="center">
   <h1><code>facemash</code></h1>
 
-  <strong>Recreating the notorious Facemash!</strong>
+  <strong>Recreating Facemash!</strong>
 
 <h3>
     <a href="https://github.com/unobatbayar/facemash/pull/new/master">Contribute</a>
