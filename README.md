@@ -11,11 +11,11 @@
 </div>
 
 ## Preparation
-You need to download your targeted images and number them. E.g if I have 500 images of girls in .jpg / .png  or any format; I must name them 1 all the way to 500 (Any image format of course). You can create simple script to automatically name them or when mass downloading images set them to.
+You need to download your targeted images and number them. E.g if I have 500 images in .jpg / .png  or any format; I must name them 1 all the way to 500 (Any image format of course). You can create simple script to automatically name them or when mass downloading images set them to.
 
 ## Demo
 
-Main page! Each girl/image has their current rank rating and will be updated depending on whether they have lost or not; Using elo rating algorithm. The opponents are completely random however, I filter any case where two opponent is same girl. In that case, we randomise again.
+Main page! Each image has their current rank rating and will be updated depending on whether they have lost or not; Using elo rating algorithm. The opponents are completely random however, I filter any case where two opponent is same. In that case, we randomise again.
 
 ![alt text](https://github.com/unobatbayar/facemash/blob/master/images/start.png) 
 
